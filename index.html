@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Formulário</title>
+    <style>
+        #resultado {
+            min-height: 200px; /* Defina a altura mínima desejada */
+            overflow-y: auto; /* Adiciona uma barra de rolagem vertical se o conteúdo for muito grande */
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Formulário 1</h1>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome">
+            </div>
+
+            <div class="form-group">
+                <label for="data">Nascimento</label>
+                <input type="date" id="Nascimento" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="Email">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="Senha">
+            </div>
+            
+            <div class="form-group">
+                <label for="celular">Celular</label>
+                <input type="text" class="form-control" id="celular" oninput="formatarCelular()">
+            </div>
+
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="comentario"></textarea>
+                <label for="floatingTextarea">Comments</label>
+            </div>
+
+            <button type="submit" class="btn btn-success" id="enviar">Enviar</button>
+
+
+            <div class="form-group mt-5">
+                <p class="form-control" id="resultado">Resultado</p>
+            </div>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
